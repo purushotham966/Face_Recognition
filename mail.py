@@ -8,8 +8,8 @@ try:
     mail=smtplib.SMTP('smtp.gmail.com:587')
     mail.ehlo()
     mail.starttls()
-    mail.login("write receiver mail_id","write_password")
-    mail.sendmail("receiver mail_id","sender mail_id","unknown person detected")
+    mail.login(" mail_id","write_password")
+    mail.sendmail("from mail_id","receiver mail_id","unknown person detected")
     mail.close()
     print("Mail sent")
     

@@ -59,6 +59,7 @@ while(True):
             import mail           #please run any of these mail or sms by commenting other one
                                    #if you run mail and sms at a time then it will going to hang... because smtp will take time to send mail same as sms 
             #import sms
+            break
             
 
        

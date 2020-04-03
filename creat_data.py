@@ -1,5 +1,5 @@
 
-//***make sure that name you are entering in the input should be already created in the images folder.
+#***make sure that name you are entering in the input should be already created in the images folder.
 
 
 import cv2

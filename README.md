@@ -1,3 +1,3 @@
 ## The project is about detecting and displaying the name of the person. If unknown person detected that wasn't in your database then it would send message via mail or text .
-
-    Firstly for creating a database run creat_data.py it would capture your photos and will be saved in the database with the folder name already created in dataset folder. Then after creating the dataset it would be trained with the help of "LBPH algorithm" one of the oldest and most popular algorithm.After trainning save the id's and names of person in pickle file(dictionary format) and save the trainning data in trainning.yml.
+Firstly for creating a database run creat_data.py it would capture your photos and will be saved in the database with the folder name already created in dataset folder.
+Then after creating the dataset it would be trained with the help of "LBPH algorithm" one of the oldest and most popular algorithm.After trainning save the id's and names of person in pickle file(dictionary format) and save the trainning data in trainning.yml.

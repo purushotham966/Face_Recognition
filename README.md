@@ -7,3 +7,7 @@ Then after creating the dataset it would be trained with the help of "LBPH algor
  don't have account in "way2sms" it's better send to mail. And you can see the unknown person image it would be saved in a file. 
  
  
+ main understanding:- 
+ 1.If you want to capture your photos firstly create a folder with your name in images folder and while running the creat_data.py the input 
+ of name should be same as created folder name.
+ 2.while sending mail make sure you turned ON the"less secure apps".And while login write your email_id and password.

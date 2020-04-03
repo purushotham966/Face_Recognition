@@ -1,3 +1,5 @@
+#Firstly run face_train.py then run this
+
 import pickle
 import cv2
 import smtplib
@@ -30,15 +32,15 @@ while(True):
         roi_color=frame[y:y+h, x:x+w]
         cv2.rectangle(frame,(x,y),(x+h,y+h),(255,0,0),2)
     
-        id_, conf = recognizer.predict(roi_gray)
+        id_, conf = recognizer.predict(roi_gray)  
         front=cv2.FONT_HERSHEY_SIMPLEX
         
         color=(255,255,255)
         stroke=2
         print(conf)
         # Check if confidence is less them 100 ==> "0" is perfect match 
-        if conf>=45 and conf<=70:
-            print(id_)
+        if conf>=45 and conf<=70:       #confidence(conf) depends on the dataset you taken 
+            print(id_)                  #you can adjest conf according to...
             print(labels[id_])
             name=labels[id_]
                 
@@ -54,9 +56,9 @@ while(True):
             print("unknown face is recognised many times")
             flag=1
             
-            #import mail //please run any of these mail or sms by commenting other one
-        
-            import sms
+            import mail           #please run any of these mail or sms by commenting other one
+                                   #if you run mail and sms at a time then it will going to hang... because smtp will take time to send mail same as sms 
+            #import sms
             
 
        

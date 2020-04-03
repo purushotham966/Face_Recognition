@@ -1,6 +1,6 @@
 import requests
 import json
-# you you want to send sms go to "way2sms" official website and full up the required details and get the" keys ."
+# you you want to send sms go to "way2sms" official website and fill up the required details and get the" keys ."
 
 URL = 'https://www.way2sms.com/api/v1/sendCampaign'
 
@@ -20,10 +20,10 @@ def sendPostRequest(reqUrl, apiKey, secretKey, useType, phoneNo, senderId, textM
 
 # get response
 response = sendPostRequest(URL, '###', '###', 'stage', '###', 'your mail_id', 'unknow face is detected' )
-"""
-  Note:-
-    you must provide apikey, secretkey, usetype, mobile, senderid and message values
-    and then requst to api
-"""
+
+  #Note:-
+    #you must provide apikey, secretkey, usetype, mobile, senderid and message values
+    #and then requst to api
+
 # print response if you want
 print (response.text)

@@ -39,8 +39,8 @@ while(True):
         stroke=2
         print(conf)
         # Check if confidence is less them 100 ==> "0" is perfect match 
-        if conf>=45 and conf<=70:       #confidence(conf) depends on the dataset you taken 
-            print(id_)                  #you can adjest conf according to...
+        if conf>=45 and conf<=80:       #confidence(conf) depends on the dataset you taken 
+            print(id_)                  #you can adjest conf according to...your dataset
             print(labels[id_])
             name=labels[id_]
                 

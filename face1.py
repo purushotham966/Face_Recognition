@@ -40,7 +40,8 @@ while(True):
         print(conf)
         # Check if confidence is less them 100 ==> "0" is perfect match 
         if conf>=45 and conf<=80:       #confidence(conf) depends on the dataset you taken 
-            print(id_)                  #you can adjest conf according to...your dataset
+            print(id_)                  #Note:-the value of confidence usually depends on your data, but the lower the better.
+                                        #you should adjust the threshold
             print(labels[id_])
             name=labels[id_]
                 
